@@ -1,0 +1,137 @@
+<html>
+    <head>
+        <title>Formação HTML Web Developer</title>
+    </head>
+    <body>
+        <h1 id="inicio"> Formação HTML Web Developer </h1>
+        <hr>
+        <h2> <mark>Índice</mark> </h2>
+        <ul>
+            <li>
+                <a href="#t1">Introdução ao HTML na Prática</a>
+                <ul>
+                    <li><a href="#t1s1">Ferramentas Utilizadas</a></li>
+                    <li><a href="#t1s2">Inspetor de Elementos</a></li>
+                    <li><a href="#t1s3">Estrutura Básica do HTML</a></li>
+                    <li><a href="#t1s4">Falando sobre Tags</a></li>
+                    <li><a href="#t1s5">Atributos das Tags</a></li>
+                    <li><a href="#t1s6">Textos</a></li>
+                    <li><a href="#t1s7">Listas Ordenadas e Não Ordenadas</a></li>
+                    <li><a href="#t1s8">Links</a></li>
+                </ul>
+            </li>
+            <li><a href="#t2">Referências</a></li>
+        </ul>
+        
+        <h1 id="t1">Introdução ao HTML na Prática</h1>
+        <hr>
+        <small><a href="#inicio">(voltar)</a></small>
+        <p>Ferramentas e informações para iniciar seu estudo sobre HTML, aprenda sobre a estrutura de um HTML, o funcionamento de tags, textos e listas para criar sua primeira página do <strong>ZERO</strong> </p>
+
+        <h2 id="t1s1"><mark>Ferramentas Utilizadas</mark></h2>
+        <small><a href="#inicio">(voltar)</a></small>
+        <p>Nesse curso iremos usar o <a href="https://code.visualstudio.com/download" target="_blank">Microsoft Visual Code</a> para criar nossa página, um editor de código-fonte autônomo que é executado no Windows, macOS e Linux. A melhor escolha para desenvolvedores JavaScript e Web, com toneladas de extensões dar suporte a praticamente qualquer linguagem de programação.</p>
+        <p>Utilizaremos também a extensão Live Server, que pode ser encontrada na aba de extensões do VS Code, para que nossa página seja acessível e visualizada pelo navegador.</p>
+
+        <h2 id="t1s2"><mark>Inspetor de Elementos</mark></h2>
+        <small><a href="#inicio">(voltar)</a></small>
+        <p>Uma ferramenta do navegador para analisar e entender o funcionamento da página através de seu código HTML.</p>
+        <p>Através dele conseguiremos ver tipos de formatação, comportamento padrão, modificações da página, etc.</p>
+        <p>Para acessá-lo basta clicar com o botão direito na página e selecionar <u>Inpecionar Elemento</u>.</p>
+
+        <h2 id="t1s3"><mark>Estrutura Básica do HTML</mark></h2>
+        <small><a href="#inicio">(voltar)</a></small>
+        <p>Para iniciar é necessário selecionar uma pasta no VS Code que será sua área de trabalho e criar um arquivo index.html (nome padrão por convenção para a página inicial)</p>
+        <p>Todo o código html é baseado em tags (<code><></code>), elas que dizem o formato da página, elas podem ser tags únicas (<code><></code>) ou tags que precisam ser fechadas (<code><><<span></span>/></code>).</p>
+        <p>Uma página se inicia com a tag html <code><<span>html</span>><<span>/html</span>></code>, dentro dela que iremos escrever nosso código.</p>
+        <p>Dentro desse espaço temos as tags head e body que são a parte não visível e a parte visível de um site.</p>
+        <p>Na tag head <code><<span>head</span>><<span>/head</span>></code> colocamos informações de configurações não visíveis da página como seu título, idioma, etc.</p>
+        <p>=> definimos o título com a tag <code><<span>title</span>></code> nome da página <code><<span>/title</span>></code>, ele aparecerá na aba da página</p>
+        <p>Já na tag body <code><<span>body</span>><<span>/body</span>></code> configuramos o conteúdo da página, toda sua parte visível.</p>
+        <p>=> escrever um texto qualquer dentro dessa tag aparecerá na tela</p>
+        <p>Com o plugin do live server instalado, conseguimos colocar esses códigos no index e visulizar a página clicando com o botão direito no arquivo e depois "open with live server", isso abrirá o navegador com a página carregada, sempre que uma alteração for feita ela já é refletida nessa página.</p>
+      
+        <h2 id="t1s4"><mark>Falando sobre Tags</mark></h2>
+        <small><a href="#inicio">(voltar)</a></small>
+        <p>Como vimos anteriormente, as tags são o que formatam a página como desejamos e elas podem ser únicas ou com fechamento</p>
+        <p>Uma dica para não confundir o tipo da tag é: quando a tag é responsável por alterar somente uma parte específica do código ela tem fechamento, quando só tem uma funcionalidade não tem fechamento</p>
+        <p>=> a tag img não tem fechamento porque só adiciona uma imagem</p>
+        <p>=> a tag strong tem porque modifica somente um pedaço do código</p>
+        <p>Veremos sobre essas tags em breve, por enquanto ficamos apenas com o entendimento</p>
+        
+        <h2 id="t1s5"><mark>Atributos das Tags</mark></h2>
+        <small><a href="#inicio">(voltar)</a></small>
+        <p>Atributos são configurações para alterar a forma padrão de uma tag, algumas tem específicos e outras possuem atributos globais (o mesmo atributo funcionando em tags diferentes).</p>
+        <p>Um exemplo de atributo é o <code>id=""</code> que designa um nome único para uma tag para conseguir configurá-la através desse nome, sendo ele seu identificador. Esse recurso é mais utilizado posteriormente no JavaScript e CSS.</p>
+        <p>=> <code><<span>img id="nome_do_identificador"</span>></code></p>
+        <p>Outro exemplo é a o atributo <code>style=""</code> que estiliza o conteúdo da tag.</p>
+        <p>=> <code><<span>p style="color: blue"</span>></code> - transforma o texto em azul</p>
+        <p>Por último temos o atributo <code>class=""</code> que define um identificador que pode ser usado em várias tags para aplicar uma mesma configuração ou estilo em várias tags diferentes.</p>
+        <p>=> <code><<span>img class="nome_do_identificador"</span>></code></p>
+        <p>Esses foram alguns exemplos de atributos globais, mas existem os específicos como o <code>type=""</code> que funciona na tag input para definir que tipo de caixa irá aparecer na tela, o <code>src=""</code> usado na tag img para dizer o caminho da imagem desejada, o <code>href=""</code> usado na tag a para referenciar o link desejado, entre outras.</p>
+
+        <h2 id="t1s6"><mark>Textos</mark></h2>
+        <small><a href="#inicio">(voltar)</a></small>
+        <p>Algumas tags de formatação de texto:</p>
+        <ul>
+            <li><code><<span>strong</span>> teste <<span>/strong</span>></code> = <strong>teste</strong> - texto em negrito</li>
+            <li><code><<span>i</span>> teste <<span>/i</span>></code> = <i>teste</i> - texto em itálico</li>
+            <li><code><<span>u</span>> teste <<span>/u</span>></code> = <u>teste</u> - texto sublinhado</li>
+            <li><code><<span>mark</span>> teste <<span>/mark</span>></code> = <mark>teste</mark> - texto com marca texto</li>
+            <li><code><<span>sup</span>> teste <<span>/sup</span>></code> = <sup>teste</sup> - texto sobrescrito</li>
+            <li><code><<span>small</span>> teste <<span>/small</span>></code> = <small>teste</small> - texto pequeno</li>
+            <li><code><<span>q</span>> teste <<span>/q</span>></code> = <q>teste</q> - formata uma citação</li>
+            <li><code><<span>h1</span>> teste <<span>/h1</span>></code> - utilizando do h1 ao h6 são criados títulos</li>
+            <li><code><<span>blockquote</span>> teste <<span>/blockquote</span>></code> - formata uma citação num bloco separado</li>
+            <li><code><<span>hr</span>></code> - cria uma linha separadora</li>
+            <li><code><<span>input type="text"</span>></code> = <input type="text"> - cria uma caixa de texto</li>
+            <li style="list-style: none;"> => existem outros tipos de input, teste trocar a palavra "text" por number, color e outras opções disponíveis e descubra novas ferramentas HTML.</li>
+            <li style="list-style: none;"> <strong>* dica:</strong> quando você digita no VS Code aparecem algumas possíveis formas de completar seu código, use isso para ver as possibilidades e aprender coisas novas na prática. Faça o teste acima selecionando as opções que o editor te da!</li>
+        </ul>
+
+        <h2 id="t1s7"><mark>Listas Ordenadas e Não Ordenadas</mark></h2>
+        <small><a href="#inicio">(voltar)</a></small>
+        <p>Conseguimos criar listas com as tags <code><<span>ol</span>></code> e <code><<span>ul</span>></code> </p>
+        <p>A tag <code><<span>ol</span>></code> cria listas ordenadas por número, letras ou outros símbolos que denotem uma ordem</p>
+        <ol>
+            <li>teste</li>
+            <li>teste</li>
+            <li>teste</li>
+        </ol>
+
+        <p>A tag <code><<span>ul</span>></code> cria listas não ordenadas com símbolos que não denotem uma ordem</p>
+            <ul>
+                <li>teste</li>
+                <li>teste</li>
+                <li>teste</li>
+            </ul>
+        <p>Para adicionar elementos as listas usamos a tag <code><<span>li</span>></p>
+        <p>=> <code><<span>ol</span>> <<span>li</span>> teste <<span>/li</span>> <<span>/ol</span>></code></p>
+        <p>Para estilizar as listas com os símbolos desejados usamos a tag <code>style=""</code> dentro das tags <code><<span>ol</span>></code> ou <code><<span>ul</span>></code> se quiser mudar todos os símbolos da lista ou dentro da tag <code><<span>li</span>> caso queira mudar somente um símbolo específico.</p>
+        <p>Também é possível adicionar listas dentro de listas, sendo um elemento <code><<span>li</span>></code> da lista, uma nova lista com a tag <code><<span>ul</span>></code> ou <code><<span>ol</span>></code>.</p>
+
+        <h2 id="t1s8"><mark>Links</mark></h2>
+        <small><a href="#inicio">(voltar)</a></small>
+
+        <p>Links são criados com a tag <code><<span>a</span>></code>, nela iremos usar o atributo <code>href=""</code> para informar o link que será utilizado.</p>
+        <p>=> <code><<span>a href="#"</span>> clique aqui <<span>/a</span>></code> = <a href="https://www.dio.me" target="_blank">clique aqui</a> - no lugar do # colocamos  o link desejado</p>
+        <p>Nesse atributo de referência podemos colocar também referências ao próprio site, como, por exemplo, queremos ser levados a outra página, criamos outro arquivo html para criar uma nova página (about.html) e colocamos o nome dele como referência.</p>
+        <p>=> <code><<span>a href="about.html"</span>> clique aqui <<span>/a</span>></code> = <a href="about.html" target="_blank">clique aqui</a> - isso levaria a página "sobre" do site
+        <p>Também é possível referenciar partes da mesma página utilizando o atributo <code>id=""</code>, nomeando um identificador a alguma parte do conteúdo da página e depois referenciando ele para ser levado para lá.</p>
+        <p>=> <code><<span>a href="#nome_do_identificador"</span>> clique aqui <<span>/a</span>></code> = <a href="#inicio">clique aqui</a> - isso levaria a parte da página com o identificador
+        <p>Temos ainda o atributo <code>target=""</code> que diz se, ao clicar no link, ele será aberto em uma nova aba (_blank) ou na sua aba atual (_self).</p>
+        <p>=> <code><<span>a href="" target="_blank"</span>> clique aqui <<span>/a</span>></code> = <a href="" target="_blank">clique aqui</a> - uma nova aba é aberta após clicar no link
+        <p>Quando não usamos o atributo <code>target=""</code> a configuração padrão é que o link seja aberto na aba atual, não sendo necessário usar o _self.</p>
+        <p>Além disso, o atributo <code>title=""</code> cria um balão com um texto que aparecerá quando o mouse passar em cima do link</p>
+        <p>=> <code><<span>a href="" target="_blank" title="texto"</span>> clique aqui <<span>/a</span>></code> = <a href="" target="_blank" title="texto">clique aqui</a> - aparecerá um balão escrito "texto"
+
+
+        <h1 id="t2">Referências</h1>
+        <small><a href="#inicio">(voltar)</a></small>
+        <hr>
+        <p><a href="https://www.dio.me" target="_blank">Dio.me</a> - Programa Formação HTML Web Developer - Professor Diogo Medeiros Mainardes</p>
+        <p><a href="https://www.w3schools.com/tags/default.asp" target="_blank">W3Schools</a> - HTML Element Reference - Arquivo sobre tags</p>
+
+
+    </body>
+</html>
